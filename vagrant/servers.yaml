@@ -1,0 +1,11 @@
+---
+- name: dev
+  box: ubuntu/trusty64
+  ram: 512
+  urlProvision: vagrant/provision/setup_devphp.sh
+  ip: 100.0.0.104
+- name: db
+  box: ubuntu/trusty64
+  ram: 512
+  ip: 100.0.0.102
+  urlProvision: vagrant/provision/setup_postgresql.sh

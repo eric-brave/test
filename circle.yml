@@ -1,0 +1,9 @@
+dependencies:
+  pre:
+    - sudo pip install awscli
+deployment:
+  staging:
+    branch: desarrollo
+    commands:
+      - aws opsworks --region us-east-1 create-deployment --stack-id 0713486c-5028-4426-bf3c-bac18c898a66 --app-id c1117d09-7fb7-4392-9fb5-122029524c8e --command "{\"Name\":\"deploy\"}"
+

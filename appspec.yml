@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+ # archivos a mover
+
+hooks: # Script asociado al inicio  del servidor y permisos
+  BeforeInstall:
+  ApplicationStart:
+  ApplicationStop:
